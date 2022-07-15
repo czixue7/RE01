@@ -20,17 +20,14 @@
         color: rgb(0, 123, 255);
         text-decoration: none;
       }
-
-      a:hover {
-        background: lightgoldenrodyellow;
-      }
-
       d {
         transition: font-size 0.5s;
       }
       d:hover {
+        background: lightgoldenrodyellow;
         font-size: 21px;
       }
+
       /* * {
         border: 1px solid black;
       } */
@@ -38,30 +35,36 @@
         box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
           rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 1px 3px 0px;
       }
-      .flex {
-        display: flex;
-      }
-
       .baise {
         background-color: rgb(185, 254, 247);
       }
-
+      .flex {
+        display: flex;
+      }
       .flex1 {
         flex: 1;
+        background-color: rgb(185, 254, 247);
       }
-
+      .flex2 {
+        flex: 1;
+        background-color: rgb(185, 254, 247);
+      }
+      .flex3 {
+        flex: 1;
+        background-color: rgb(100, 225, 247);
+      }
       .column {
         flex-direction: column;
       }
 
       .mg8 {
-        margin: 8px;
+        margin: 7px;
       }
       .mgr8 {
-        margin-right: 8px;
+        margin-right: 7px;
       }
       .mgt8 {
-        margin-top: 8px;
+        margin-top: 7px;
       }
       .daohang {
         display: flex;
@@ -74,7 +77,7 @@
     </style>
   </head>
 
-  <body class="flex" style="background: rgb(210, 227, 255)">
+  <body class="flex" style="background: rgb(3, 179, 255)">
     <!--侧边栏-->
     <div style="width: 120px; z-index: 2" class="baise yinying">
       <!-- 头像栏 -->
@@ -87,7 +90,7 @@
         "
         class="flex"
       >
-        <img src="LOGO.png" width="40px" height="40px" alt="" />
+        <img src="LOGO.png" width="40px" height="40px" alt="微剧组" />
         <div style="margin-left: 10px">微剧组</div>
       </div>
       <!-- 导航栏 -->
@@ -96,27 +99,39 @@
           <d href="https://blog.noxue.com/">不学网</d>
         </div>
         <div class="daohang">
-          <d href="http://www.czixue7.icoc.bz/">微剧组</d>
+          <a href="http://www.czixue7.icoc.bz/">微剧组</a>
         </div>
         <div class="daohang">暂无导航</div>
         <div class="daohang">暂无导航</div>
       </div>
     </div>
     <!--主区域-->
-    <div class="flex1 flex column">
+    <div class="flex3 flex column">
       <!--头部栏-->
-      <div style="height: 60px; z-index: 1" class="baise yinying"></div>
+      <div style="height: 63px; z-index: 1" class="baise yinying">
+        <div style="width: 100%; height: 100%; align-content: space-around">
+          微剧组
+        </div>
+      </div>
       <!--内容区-->
-      <div style="overflow: auto" class="flex1 flex">
+      <div style="overflow: auto" class="flex">
         <!--左区-->
         <div style="flex: 3" class="flex column mg8">
           <!--数据区-->
           <div class="flex">
             <!-- 数据块 -->
-            <div style="height: 100px" class="flex1 baise mgr8 yinying"></div>
-            <div style="height: 100px" class="flex1 baise mgr8 yinying"></div>
-            <div style="height: 100px" class="flex1 baise mgr8 yinying"></div>
-            <div style="height: 100px" class="flex1 baise yinying"></div>
+            <div style="height: 100px" class="flex2 baise mgr8 yinying">
+              <img src="SKY1.jpeg" width="100%" height="100%" alt="" />
+            </div>
+            <div style="height: 100px" class="flex2 baise mgr8 yinying">
+              <img src="SKY2.jpeg" width="100%" height="100%" alt="" />
+            </div>
+            <div style="height: 100px" class="flex2 baise mgr8 yinying">
+              <img src="SKY3.jpeg" width="100%" height="100%" alt="" />
+            </div>
+            <div style="height: 100px" class="flex2 baise yinying">
+              <img src="SKY4.jpeg" width="100%" height="100%" alt="" />
+            </div>
           </div>
           <!--列表区-->
           <div class="flex column">
@@ -124,14 +139,23 @@
             <div style="height: 160px" class="baise mgt8 yinying"></div>
             <div style="height: 160px" class="baise mgt8 yinying"></div>
             <div style="height: 160px" class="baise mgt8 yinying"></div>
-            <div style="height: 160px" class="baise mgt8 yinying"></div>
-            <div style="height: 160px" class="baise mgt8 yinying"></div>
           </div>
         </div>
         <!--右区-->
         <div style="flex: 1" class="flex column mgr8 mgt8">
-          <!-- 提示区 -->
-          <div style="height: 150px" class="baise yinying"></div>
+          <!-- 音乐播放 -->
+          <div style="height: 300px" class="baise yinying">
+            <img
+              src="Martin Ermen - River Flows In You.jpeg"
+              width="100%"
+              height="220px"
+              alt=""
+            />
+            <p style="font-size: 13px">Martin Ermen - River Flows In You</p>
+            <audio controls style="height: 30px; width: 100%">
+              <source src="Martin Ermen - River Flows In You.mp3" />
+            </audio>
+          </div>
           <!-- 消息区 -->
           <div style="height: 300px" class="baise mgt8 yinying"></div>
         </div>
