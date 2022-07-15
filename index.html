@@ -4,14 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>flex 布局</title>
+    <title>微剧组</title>
     <style>
       body {
         margin: 0;
         height: 100vh;
         background-color: #eee;
       }
+      a:link {
+        color: black;
+        text-decoration: none;
+      }
 
+      a:visited {
+        color: rgb(0, 123, 255);
+        text-decoration: none;
+      }
+
+      a:hover {
+        background: lightgoldenrodyellow;
+      }
+
+      d {
+        transition: font-size 0.5s;
+      }
+      d:hover {
+        font-size: 21px;
+      }
       /* * {
         border: 1px solid black;
       } */
@@ -24,7 +43,7 @@
       }
 
       .baise {
-        background-color: white;
+        background-color: rgb(185, 254, 247);
       }
 
       .flex1 {
@@ -45,6 +64,8 @@
         margin-top: 8px;
       }
       .daohang {
+        display: flex;
+        justify-content: center;
         padding: 10px 20px;
         border-bottom: 1px solid grey;
         font-size: 14px;
@@ -53,9 +74,9 @@
     </style>
   </head>
 
-  <body class="flex">
+  <body class="flex" style="background: rgb(210, 227, 255)">
     <!--侧边栏-->
-    <div style="width: 200px; z-index: 2" class="baise yinying">
+    <div style="width: 120px; z-index: 2" class="baise yinying">
       <!-- 头像栏 -->
       <div
         style="
@@ -71,10 +92,14 @@
       </div>
       <!-- 导航栏 -->
       <div class="flex1">
-        <div class="daohang">导航</div>
-        <div class="daohang">导航</div>
-        <div class="daohang">导航</div>
-        <div class="daohang">导航</div>
+        <div class="daohang">
+          <d href="https://blog.noxue.com/">不学网</d>
+        </div>
+        <div class="daohang">
+          <d href="http://www.czixue7.icoc.bz/">微剧组</d>
+        </div>
+        <div class="daohang">暂无导航</div>
+        <div class="daohang">暂无导航</div>
       </div>
     </div>
     <!--主区域-->
