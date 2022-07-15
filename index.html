@@ -10,7 +10,8 @@
       body {
         margin: 0;
         height: 100vh;
-        background-color: #eee;
+        background-image: url("./SKY0.jpg");
+        background-size: 100% 100%;
       }
       a:link {
         color: black;
@@ -37,22 +38,24 @@
           rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 1px 3px 0px;
       }
       .baise {
-        background-color: rgb(185, 254, 247);
+        background-color: rgba(255, 255, 255, 0.3);
       }
       .flex {
         display: flex;
       }
       .flex1 {
         flex: 1;
-        background-color: rgb(185, 254, 247);
+        background-color: rgba(0, 0, 0, 0);
       }
       .flex2 {
-        flex: 1;
-        background-color: rgb(185, 254, 247);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 50px;
+        color: antiquewhite;
       }
       .flex3 {
         flex: 1;
-        background-color: rgb(100, 225, 247);
       }
       .column {
         flex-direction: column;
@@ -71,14 +74,14 @@
         display: flex;
         justify-content: center;
         padding: 10px 20px;
-        border-bottom: 1px solid grey;
-        font-size: 14px;
-        color: #666;
+        border-bottom: 1px solid rgba(16, 183, 255, 0.3);
+        font-size: 17px;
+        color: rgb(0, 0, 0);
       }
     </style>
   </head>
 
-  <body class="flex" style="background: rgb(3, 179, 255)">
+  <body class="flex">
     <!--侧边栏-->
     <div style="width: 120px; z-index: 2" class="baise yinying">
       <!-- 头像栏 -->
@@ -91,8 +94,7 @@
         "
         class="flex"
       >
-        <img src="LOGO.png" width="40px" height="40px" alt="微剧组" />
-        <div style="margin-left: 10px">微剧组</div>
+        <img src="LOGO.png" width="70px" height="75px" alt="微剧组" />
       </div>
       <!-- 导航栏 -->
       <div class="flex1">
@@ -107,12 +109,12 @@
       </div>
     </div>
     <!--主区域-->
-    <div class="flex3 flex column">
+    <div class="flex3 column">
       <!--头部栏-->
-      <div style="height: 63px; z-index: 1" class="baise yinying">
-        <div style="width: 100%; height: 100%; align-content: space-around">
-          微剧组
-        </div>
+      <div style="height: 95px; z-index: 1" class="flex2 baise yinying">
+        <div>微</div>
+        <div>剧</div>
+        <div>组</div>
       </div>
       <!--内容区-->
       <div style="overflow: auto" class="flex">
@@ -120,26 +122,26 @@
         <div style="flex: 3" class="flex column mg8">
           <!--数据区-->
           <div class="flex">
-            <!-- 数据块 -->
-            <div style="height: 100px" class="flex2 baise mgr8 yinying">
+            <!-- 图片块 -->
+            <div style="height: 100px" class="baise mgr8 yinying">
               <img src="SKY1.jpg" width="100%" height="100%" alt="" />
             </div>
-            <div style="height: 100px" class="flex2 baise mgr8 yinying">
+            <div style="height: 100px" class="baise mgr8 yinying">
               <img src="SKY2.jpg" width="100%" height="100%" alt="" />
             </div>
-            <div style="height: 100px" class="flex2 baise mgr8 yinying">
+            <div style="height: 100px" class="baise mgr8 yinying">
               <img src="SKY3.jpg" width="100%" height="100%" alt="" />
             </div>
-            <div style="height: 100px" class="flex2 baise yinying">
+            <div style="height: 100px" class="baise yinying">
               <img src="SKY4.jpg" width="100%" height="100%" alt="" />
             </div>
           </div>
           <!--列表区-->
           <div class="flex column">
             <!-- 列表项 -->
-            <div style="height: 160px" class="baise mgt8 yinying"></div>
-            <div style="height: 160px" class="baise mgt8 yinying"></div>
-            <div style="height: 160px" class="baise mgt8 yinying"></div>
+            <div style="height: 157px" class="baise mgt8 yinying"></div>
+            <div style="height: 157px" class="baise mgt8 yinying"></div>
+            <div style="height: 157px" class="baise mgt8 yinying"></div>
           </div>
         </div>
         <!--右区-->
@@ -158,7 +160,7 @@
             </audio>
           </div>
           <!-- 消息区 -->
-          <div style="height: 300px" class="baise mgt8 yinying"></div>
+          <div style="height: 285px" class="baise mgt8 yinying"></div>
         </div>
       </div>
     </div>
