@@ -1,0 +1,13 @@
+CACHE wjz.appcache
+
+#v1.0
+
+CACHE:
+./LOGO.png
+./SKY0.jpg
+./SKY1.jpg
+./SKY2.jpg
+./SKY3.jpg
+./SKY4.jpg
+./Martin Ermen - River Flows In You.mp3
+./Martin Ermen - River Flows In You.jpg
