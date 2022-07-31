@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="zh-CN" manifest="wjz.appcache">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>微剧组</title>
+    <link rel="icon" href="./TP/favicon.ico" />
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        background-image: url("./TP/SKY5.jpg");
+        background-size: 100% 100%;
+      }
+      a {
+        transition: font-size 0.5s;
+        text-decoration: none;
+        color: rgb(86, 187, 255);
+      }
+      .daohang:hover {
+        background: rgba(135, 206, 250, 0.445);
+        font-size: 17px;
+      }
+
+      /* * {
+        border: 1px solid black;
+      } */
+      .yinying {
+        box-shadow: rgb(0 0 0 / 20%) 0px 2px 1px -1px,
+          rgb(0 0 0 / 14%) 0px 1px 1px 0px, rgb(0 0 0 / 12%) 1px 3px 0px;
+      }
+      .baise {
+        background-color: rgba(0, 0, 0, 0.233);
+      }
+      .flex {
+        display: flex;
+      }
+      .flex1 {
+        flex: 1;
+        background-color: rgba(0, 0, 0, 0);
+      }
+      .flex2 {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 50px;
+        color: antiquewhite;
+      }
+      .flex3 {
+        flex: 1;
+      }
+      .column {
+        flex-direction: column;
+      }
+
+      .mg8 {
+        margin: 7px;
+      }
+      .mgr8 {
+        margin-right: 7px;
+      }
+      .mgt8 {
+        margin-top: 7px;
+      }
+      .daohang {
+        display: flex;
+        justify-content: center;
+        padding: 10px 20px;
+        border-bottom: 1px solid rgba(16, 183, 255, 0.3);
+        font-size: 15px;
+        color: rgb(0, 0, 0);
+      }
+      .zt {
+        font-family: serif;
+        text-shadow: 4px 4px 8px rgb(114, 113, 113);
+      }
+    </style>
+  </head>
+
+  <body class="flex">
+    <!--侧边栏-->
+    <div style="width: 110px; z-index: 2" class="baise yinying">
+      <!-- 头像栏 -->
+      <div
+        style="padding: 10px; align-items: center; justify-content: center"
+        class="flex"
+      >
+        <img
+          src="./TP/LOGO.png"
+          width="70px"
+          height="75px"
+          alt="微剧组"
+          title="星标"
+        />
+      </div>
+      <!-- 导航栏 -->
+      <div class="flex1">
+        <div class="daohang">
+          <a href="https://blog.noxue.com/">不学网</a>
+        </div>
+        <div class="daohang">
+          <a href="http://www.czixue7.icoc.bz/">微剧组</a>
+        </div>
+        <div class="daohang"><a href="#">暂无导航</a></div>
+        <div class="daohang"><a href="#">暂无导航</a></div>
+      </div>
+    </div>
+    <!--主区域-->
+    <div class="flex3 column">
+      <!--头部栏-->
+      <div style="height: 95px; z-index: 1" class="zt flex2 baise yinying">
+        <b>微</b>
+        <b>剧</b>
+        <b>组</b>
+      </div>
+      <!--内容区-->
+      <span style="height: 125px; flex-direction: row" class="baise yinying">
+        <img
+          src="./TP/Martin Ermen - River Flows In You.jpg"
+          width="100%"
+          height="120px"
+          alt=""
+        />
+        <span>
+          <p style="font-size: 13px">Martin Ermen - River Flows In You</p>
+          <audio controls style="height: 30px; width: 100%">
+            <source src="Martin Ermen - River Flows In You.mp3" />
+          </audio>
+        </span>
+      </span>
+      <div style="flex: 2" class="flex column mg8">
+        <!--数据区-->
+        <div class="flex column">
+          <!-- 图片块 -->
+          <div style="height: 60px" class="baise mgr8 yinying">
+            <img
+              src="./TP/SKY1.jpg"
+              width="100%"
+              height="100%"
+              alt=""
+              title="光遇-遇镜传送门"
+            />
+          </div>
+          <div style="height: 60px" class="baise mgr8 yinying">
+            <img
+              src="./TP/SKY2.jpg"
+              width="100%"
+              height="100%"
+              alt=""
+              title="光遇-霞谷圆梦村"
+            />
+          </div>
+          <div style="height: 60px" class="baise mgr8 yinying">
+            <img
+              src="./TP/SKY3.jpg"
+              width="100%"
+              height="100%"
+              alt=""
+              title="光遇-玫瑰花园"
+            />
+          </div>
+          <div style="height: 60px" class="baise yinying">
+            <img
+              src="./TP/SKY4.jpg"
+              width="100%"
+              height="100%"
+              alt=""
+              title="光遇-遇镜夕阳"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
