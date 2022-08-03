@@ -1,0 +1,81 @@
+        body {
+            margin: 0;
+            height: 100vh;
+            background-image: url("./TP/SKY5.webp");
+            background-size: 100%100%
+        }
+
+        a {
+            transition: font-size 0.5s;
+            text-decoration: none;
+            color: rgb(86, 187, 255)
+        }
+
+        .daohang:hover {
+            background: rgba(135, 206, 250, 0.445);
+            font-size: 17px
+        }
+
+        .yinying {
+            box-shadow: rgb(0 0 0/20%)0px 2px 1px-1px, rgb(0 0 0/14%)0px 1px 1px 0px, rgb(0 0 0/12%)1px 3px 0px
+        }
+
+        .baise {
+            background-color: rgba(0, 0, 0, 0.233)
+        }
+
+        .flex {
+            display: flex
+        }
+
+        .flex1 {
+            flex: 1;
+            background-color: rgba(0, 0, 0, 0)
+        }
+
+        .flex2 {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            font-size: 50px;
+            color: antiquewhite
+        }
+
+        .flex3 {
+            flex: 1
+        }
+
+        .column {
+            flex-direction: column
+        }
+
+        .mg8 {
+            margin: 7px
+        }
+
+        .mgr8 {
+            margin-right: 7px
+        }
+
+        .mgt8 {
+            margin-top: 7px
+        }
+
+        .daohang {
+            display: flex;
+            justify-content: center;
+            padding: 10px 20px;
+            border-bottom: 1px solid rgba(16, 183, 255, 0.3);
+            font-size: 15px;
+            color: rgb(0, 0, 0)
+        }
+
+        .zt {
+            font-family: serif;
+            text-shadow: 4px 4px 8px rgb(114, 113, 113)
+        }
+
+        .juzhong {
+            display: flex;
+            align-items: center
+        }
