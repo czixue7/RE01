@@ -4,17 +4,9 @@
         background-image: url("./TP/SKY0.jpg");
         background-size: 100% 100%;
       }
-      a {
-        transition: font-size 0.5s;
-        text-decoration: none;
-        color: rgb(86, 187, 255);
-      }
-      .daohang:hover {
-        background: rgba(135, 206, 250, 0.445);
-        font-size: 20px;
-      }
 
-      /* * {
+
+      /* *{
         border: 1px solid black;
       } */
       .yinying {
@@ -54,13 +46,28 @@
       .mgt8 {
         margin-top: 7px;
       }
+      a {
+        transition: font-size 0.5s;
+        text-decoration: none;
+        color: rgb(86, 187, 255);
+      }
+      .daohang:hover {
+        background: rgba(135, 206, 250, 0.445);
+        font-size: 20px;
+      }
       .daohang {
         display: flex;
         justify-content: center;
-        padding: 10px 20px;
         border-bottom: 1px solid rgba(16, 183, 255, 0.3);
         font-size: 17px;
-        color: rgb(0, 0, 0);
+        
+      }
+      .daohang a{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        padding: 10px 20px;
       }
       .bt {
         font-family: serif;

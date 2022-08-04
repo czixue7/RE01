@@ -5,17 +5,6 @@
             background-size: 100%100%
         }
 
-        a {
-            transition: font-size 0.5s;
-            text-decoration: none;
-            color: rgb(86, 187, 255)
-        }
-
-        .daohang:hover {
-            background: rgba(135, 206, 250, 0.445);
-            font-size: 17px
-        }
-
         .yinying {
             box-shadow: rgb(0 0 0/20%)0px 2px 1px-1px, rgb(0 0 0/14%)0px 1px 1px 0px, rgb(0 0 0/12%)1px 3px 0px
         }
@@ -60,16 +49,27 @@
         .mgt8 {
             margin-top: 7px
         }
+        a {
+            transition: font-size 0.5s;
+            text-decoration: none;
+            color: rgb(86, 187, 255)
+        }
 
+        .daohang:hover {
+            background: rgba(135, 206, 250, 0.445);
+            font-size: 17px
+        }
         .daohang {
-            display: flex;
-            justify-content: center;
-            padding: 10px 20px;
             border-bottom: 1px solid rgba(16, 183, 255, 0.3);
             font-size: 15px;
             color: rgb(0, 0, 0)
+    
         }
-
+        .daohang a {
+            display: flex;
+            justify-content: center;
+            padding: 10px 20px;
+        }
         .zt {
             font-family: serif;
             text-shadow: 4px 4px 8px rgb(114, 113, 113)
