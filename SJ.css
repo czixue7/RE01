@@ -2,7 +2,8 @@
             margin: 0;
             height: 100vh;
             background-image: url("./TP/SKY5.webp");
-            background-size: 100%100%
+            background-size: 100%100%;
+            background-attachment:fixed;
         }
 
         .yinying {
@@ -49,6 +50,7 @@
         .mgt8 {
             margin-top: 7px
         }
+
         a {
             transition: font-size 0.5s;
             text-decoration: none;
@@ -59,17 +61,19 @@
             background: rgba(135, 206, 250, 0.445);
             font-size: 17px
         }
+
         .daohang {
             border-bottom: 1px solid rgba(16, 183, 255, 0.3);
             font-size: 15px;
             color: rgb(0, 0, 0)
-    
         }
+
         .daohang a {
             display: flex;
             justify-content: center;
             padding: 10px 20px;
         }
+
         .zt {
             font-family: serif;
             text-shadow: 4px 4px 8px rgb(114, 113, 113)
